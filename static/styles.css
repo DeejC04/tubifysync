@@ -209,6 +209,24 @@ a {
     margin-left: auto;
 }
 
+.loginbox {
+    background: white;
+    width: 115px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 25px;
+}
+
+.loginbox a {
+    color: #101010;
+    text-align: center;
+    text-decoration:none; 
+    font-size: 15px;
+    font-weight: bold;
+}
+
 #playlist-container {
     min-width: 80%;
     margin: 8px;
@@ -238,7 +256,8 @@ a {
 
 .panel {
     overflow: auto;
-    background-color: var(--background-color);
+    background: rgb(31,31,31);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 9%, rgba(18,18,18,1) 59%);
     border-radius: 10px;
     margin: var(--panel-spacing);
     height: calc(100% - 2 * var(--panel-spacing));
@@ -278,7 +297,8 @@ a {
 #loading-bar {
     height: 8px;
     width: 50%;
-    background-color: var(--background-color);
+    background: rgb(31,31,31);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 9%, rgba(18,18,18,1) 59%);
     border-radius: 4px;
 }
 
