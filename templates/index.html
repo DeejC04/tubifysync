@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="../static/script.js"></script>
+    <script src="{{url_for('static', filename='somejavascriptfile.js')}}"></script>
     <title>Tubify</title>
 
   </head>
@@ -20,7 +22,7 @@
       </div>
 
       <div class=""navbar-right">
-        <p><a href="about::home">Log in</a> or <a href="about::home">Sign up</a></p>
+        <p><a href="about::home">Log in with Youtube Music</a> or <a href="/spotify_login">Log in with Spotify</a></p>
       </div>
     </nav>
 
