@@ -8,4 +8,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def landing_page():
-    return render('index.html')
+    return render('index.html'
+)
