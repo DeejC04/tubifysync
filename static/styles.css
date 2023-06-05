@@ -30,6 +30,106 @@
     border-radius: 10px;
 }
 
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('./fonts/CircularStd-BookItalic.woff2') format('woff2'),
+        url('./fonts/CircularStd-BookItalic.woff') format('woff'),
+        url('./fonts/CircularStd-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('./fonts/CircularStd-Bold.woff') format('woff'),
+        url('./fonts/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-BlackItalic.woff2') format('woff2'),
+        url('./fonts/CircularStd-BlackItalic.woff') format('woff'),
+        url('./fonts/CircularStd-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-MediumItalic.woff2') format('woff2'),
+        url('./fonts/CircularStd-MediumItalic.woff') format('woff'),
+        url('./fonts/CircularStd-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-BoldItalic.woff2') format('woff2'),
+        url('./fonts/CircularStd-BoldItalic.woff') format('woff'),
+        url('./fonts/CircularStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('./fonts/CircularStd-Medium.woff') format('woff'),
+        url('./fonts/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('./fonts/CircularStd-Book.woff2') format('woff2'),
+        url('./fonts/CircularStd-Book.woff') format('woff'),
+        url('./fonts/CircularStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('fonts/CircularStd-Black.woff2') format('woff2'),
+        url('fonts/CircularStd-Black.woff') format('woff'),
+        url('fonts/CircularStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('fonts/CircularSpotifyText-Light.woff2') format('woff2'),
+        url('fonts/CircularSpotifyText-Light.woff') format('woff'),
+        url('fonts/CircularSpotifyText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularSpotifyText-LightItalic.woff2') format('woff2'),
+        url('./fonts/CircularSpotifyText-LightItalic.woff') format('woff'),
+        url('./fonts/CircularSpotifyText-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -43,7 +143,7 @@ h1 {
 body {
     background-color: var(--backplane-color);
     color: var(--text-color);
-    font-family: sans-serif;
+    font-family: 'Circular Std';
     margin: 0;
     padding: 0;
     height: 100%;
@@ -109,6 +209,24 @@ a {
     margin-left: auto;
 }
 
+.loginbox {
+    background: white;
+    width: 115px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 25px;
+}
+
+.loginbox a {
+    color: #101010;
+    text-align: center;
+    text-decoration:none; 
+    font-size: 15px;
+    font-weight: bold;
+}
+
 #playlist-container {
     min-width: 80%;
     margin: 8px;
@@ -138,7 +256,8 @@ a {
 
 .panel {
     overflow: auto;
-    background-color: var(--background-color);
+    background: rgb(31,31,31);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 9%, rgba(18,18,18,1) 59%);
     border-radius: 10px;
     margin: var(--panel-spacing);
     height: calc(100% - 2 * var(--panel-spacing));
@@ -178,7 +297,8 @@ a {
 #loading-bar {
     height: 8px;
     width: 50%;
-    background-color: var(--background-color);
+    background: rgb(31,31,31);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 9%, rgba(18,18,18,1) 59%);
     border-radius: 4px;
 }
 
