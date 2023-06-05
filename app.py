@@ -34,4 +34,4 @@ def get_spotify_key():
 
 # Runs Flask app when the Python script is opened directly
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="http://localhost:5000/")
