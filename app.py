@@ -1,6 +1,3 @@
-# Use "flask run" to initialize the local server
-# ---
-
 from flask import Flask, render_template, redirect, request, jsonify
 from spotify_interaction import spotify_login
 import json
