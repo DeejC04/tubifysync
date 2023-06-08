@@ -1,0 +1,170 @@
+:root {
+    /* https://realtimecolors.com/?colors=faf9fb-0b070d-476138-130d17-476138 */
+    --backplane-color: #000000;
+    --background-color: #0b070d;
+    --text-color: #faf9fb;
+    --primary-button: #476138;
+    --secondary-button: #130d17;
+    --accent-color: #476138;
+
+    --navbar-height: 3.5rem;
+    --panel-spacing: 4px;
+}
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('./fonts/CircularStd-BookItalic.woff2') format('woff2'),
+        url('./fonts/CircularStd-BookItalic.woff') format('woff'),
+        url('./fonts/CircularStd-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('./fonts/CircularStd-Bold.woff') format('woff'),
+        url('./fonts/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-BlackItalic.woff2') format('woff2'),
+        url('./fonts/CircularStd-BlackItalic.woff') format('woff'),
+        url('./fonts/CircularStd-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-MediumItalic.woff2') format('woff2'),
+        url('./fonts/CircularStd-MediumItalic.woff') format('woff'),
+        url('./fonts/CircularStd-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-BoldItalic.woff2') format('woff2'),
+        url('./fonts/CircularStd-BoldItalic.woff') format('woff'),
+        url('./fonts/CircularStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('./fonts/CircularStd-Medium.woff') format('woff'),
+        url('./fonts/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('./fonts/CircularStd-Book.woff2') format('woff2'),
+        url('./fonts/CircularStd-Book.woff') format('woff'),
+        url('./fonts/CircularStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('fonts/CircularStd-Black.woff2') format('woff2'),
+        url('fonts/CircularStd-Black.woff') format('woff'),
+        url('fonts/CircularStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('fonts/CircularSpotifyText-Light.woff2') format('woff2'),
+        url('fonts/CircularSpotifyText-Light.woff') format('woff'),
+        url('fonts/CircularSpotifyText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/CircularSpotifyText-LightItalic.woff2') format('woff2'),
+        url('./fonts/CircularSpotifyText-LightItalic.woff') format('woff'),
+        url('./fonts/CircularSpotifyText-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Circular Std';
+    color: white;
+    background-color: #000000;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 200px;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #1DB954;
+    height: 3.5em;
+    justify-content: center;
+    border-radius: 2em;
+}
+
+.youtube {
+    color: white;
+    background-color: #FF0000;
+    height: 3.5em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2em;
+}
+
+a, a:hover, a:visited, a:active {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.75rem 1.5rem;
+}
+
+.login_buttons {
+    display: flex;
+    background-color: #181414;
+    width: 30%;
+    height: 30vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2em;
+}
